@@ -3,7 +3,37 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'home', loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)},
+  { 
+    path: 'home', 
+    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)},
+  {
+    path: 'auth',
+    loadChildren: () => import('./auth/auth.module').then( m => m.AuthPageModule)
+  },
+  {
+    path: 'registration',
+    loadChildren: () => import('./registration/registration.module').then( m => m.RegistrationPageModule)
+  },
+  {
+    path: 'dashboard',
+    loadChildren: () => import('./dashboard/dashboard.module').then( m => m.DashboardPageModule)
+  },
+  {
+    path: 'test-package',
+    loadChildren: () => import('./test-package/test-package.module').then( m => m.TestPackagePageModule)
+  },
+  {
+    path: 'video-package',
+    loadChildren: () => import('./video-package/video-package.module').then( m => m.VideoPackagePageModule)
+  },
+  {
+    path: 'test-package-purchase',
+    loadChildren: () => import('./test-package-purchase/test-package-purchase.module').then( m => m.TestPackagePurchasePageModule)
+  },
+  {
+    path: 'video-package-purchase',
+    loadChildren: () => import('./video-package-purchase/video-package-purchase.module').then( m => m.VideoPackagePurchasePageModule)
+  },
 ];
 
 @NgModule({
