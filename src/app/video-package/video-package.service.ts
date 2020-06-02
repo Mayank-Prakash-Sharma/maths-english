@@ -19,7 +19,12 @@ export class VideoPackageService {
   get freeVideoPackages() {
     console.log ("service called");
     console.log (this._freeVideoPackages);
-    return [...this._freeVideoPackages];  //Using spread (i.e. ...) allows me to get a new array copy
+    return [...this._freeVideoPackages];  // Using spread operator (i.e. ...) allows me to clone the entire object and get a new array copy
+  }
+
+  //Function to be provide the dynamic id of the subject (shown as ion-item in html) that has been clicked on the previous page
+  accessSubjectId (id: string) {
+    return {...this._freeVideoPackages.find(s => s.id === id)}; // Using spread operator (i.e. ...) allows me to clone the entire object and get a new array copy
   }
 
   constructor() { }

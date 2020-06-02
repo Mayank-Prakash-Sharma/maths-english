@@ -5,7 +5,8 @@
       <ion-back-button defaultHref="/tabs/video-package"></ion-back-button>
     </ion-buttons>
     <!-- Adding back button - ENDS -->
-    <ion-title>Videos</ion-title>
+    <!-- The title of the page will be the subject name that was clicked on the previous page. -->
+    <ion-title>{{ loadedVideoPackage.title }}</ion-title>
   </ion-toolbar>
 </ion-header>
 

@@ -3,9 +3,9 @@ import { Component, OnInit } from '@angular/core';
 //Import SegmentChangeEventDetail
 import { SegmentChangeEventDetail } from '@ionic/core';
 
-// Import Service having my packages and data model class
-import { VideoPackages } from './video-package.model';
+// Import and inject Service having my packages and data model class
 import { VideoPackageService } from './video-package.service';
+import { VideoPackages } from './video-package.model';
 
 @Component({
   selector: 'app-video-package',
