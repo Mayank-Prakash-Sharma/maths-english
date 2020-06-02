@@ -10,9 +10,9 @@ export class VideoPackageService {
 
   //The data of my Free Classes Folders
   private _freeVideoPackages: VideoPackages[] = [
-    new VideoPackages('package1', 'English', 'English Classes', 0),
-    new VideoPackages('package2', 'Arithmetic', 'Arithmetic Classes', 0),
-    new VideoPackages('package3', 'Higher Maths', 'Higher Maths Classes', 0),
+    new VideoPackages('subject1', 'English', 'English Classes', 0),
+    new VideoPackages('subject2', 'Arithmetic', 'Arithmetic Classes', 0),
+    new VideoPackages('subject3', 'Higher Maths', 'Higher Maths Classes', 0),
   ];
 
   //getter function to get the data of my Free Classes Folders

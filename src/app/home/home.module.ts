@@ -4,6 +4,8 @@ import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
 
 import { HomePage } from './home.page';
+
+//Import our routing module having all our routes. 
 import { HomeRoutingModule } from './home-routing.module';
 
 @NgModule({
@@ -11,7 +13,7 @@ import { HomeRoutingModule } from './home-routing.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    HomeRoutingModule,
+    HomeRoutingModule,   //Import our routing module having all our routes. 
   ],
   declarations: [HomePage]
 })
